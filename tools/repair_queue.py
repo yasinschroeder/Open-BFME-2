@@ -1495,7 +1495,8 @@ def header_items():
         if undecided:
             # generate() declares decided slots only; a contract leaving slots open cannot be generated
             obstacle = (f"the contract leaves virtual slot(s) {', '.join(undecided[:6])} undecided, so `run "
-                        "--generate` refuses (docs/linking_obstacles.md, \"Module base chain\")")
+                        "--generate` refuses (docs/linking_obstacles/"
+                        "module-base-chain-canonical-headers-block-the-most-tu-merges-2026-10-28.md)")
             generate = choose + by_hand
         else:
             obstacle = ""
